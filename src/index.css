@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .input {
+    @apply bg-gray-800 border border-gray-600 rounded px-2 py-1 text-white text-xs w-full
+           focus:outline-none focus:border-blue-500;
+  }
+  .btn-sm {
+    @apply text-white text-xs rounded px-3 py-1.5 font-medium transition-colors;
+  }
+}
