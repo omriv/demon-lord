@@ -47,7 +47,7 @@
     "skillAmount": 3,
     "power": null,
     "count": 10,
-    "item": "carrots",
+    "item": "carrot",
     "itemAmount": 2,
     "requirements": []
   },
@@ -89,7 +89,11 @@
     "item": "wood",
     "itemAmount": 1,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 20 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 20
+      }
     ]
   },
   {
@@ -104,7 +108,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight forest guardian", "type": "task", "amount": 1 }
+      {
+        "name": "fight forest guardian",
+        "type": "task",
+        "amount": 1
+      }
     ]
   },
   {
@@ -119,8 +127,16 @@
     "item": "gold",
     "itemAmount": 25,
     "requirements": [
-      { "name": "clean tables", "type": "task", "amount": 5 },
-      { "name": "fight rats", "type": "task", "amount": 10 }
+      {
+        "name": "clean tables",
+        "type": "task",
+        "amount": 5
+      },
+      {
+        "name": "fight rats",
+        "type": "task",
+        "amount": 10
+      }
     ]
   },
   {
@@ -161,7 +177,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "wood", "type": "item", "amount": 5 }
+      {
+        "name": "wood",
+        "type": "item",
+        "amount": 5
+      }
     ]
   },
   {
@@ -215,7 +235,11 @@
     "item": "wood",
     "itemAmount": 2,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 5 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 5
+      }
     ]
   },
   {
@@ -230,7 +254,11 @@
     "item": "trap",
     "itemAmount": 1,
     "requirements": [
-      { "name": "wood", "type": "item", "amount": 1 }
+      {
+        "name": "wood",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -245,8 +273,16 @@
     "item": "rabbit",
     "itemAmount": 1,
     "requirements": [
-      { "name": "trap", "type": "item", "amount": 1 },
-      { "name": "carrot", "type": "item", "amount": 1 }
+      {
+        "name": "trap",
+        "type": "item",
+        "amount": 1
+      },
+      {
+        "name": "carrot",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -274,7 +310,11 @@
     "item": "gold",
     "itemAmount": 1,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 10 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 10
+      }
     ]
   },
   {
@@ -289,7 +329,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "read \"10 phrases you might need in a goblin ambush\"", "type": "task", "amount": 1 }
+      {
+        "name": "read \"10 phrases you might need in a goblin ambush\"",
+        "type": "task",
+        "amount": 1
+      }
     ]
   },
   {
@@ -304,8 +348,16 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight goblins", "type": "task", "amount": 1 },
-      { "name": "read \"sound as beautiful as we look\"", "type": "task", "amount": 1 }
+      {
+        "name": "fight goblins",
+        "type": "task",
+        "amount": 1
+      },
+      {
+        "name": "read \"sound as beautiful as we look\"",
+        "type": "task",
+        "amount": 1
+      }
     ]
   },
   {
@@ -320,7 +372,11 @@
     "item": "spring water",
     "itemAmount": 1,
     "requirements": [
-      { "name": "vial", "type": "item", "amount": 1 }
+      {
+        "name": "vial",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -361,7 +417,11 @@
     "item": "gold",
     "itemAmount": 3,
     "requirements": [
-      { "name": "herb", "type": "item", "amount": 1 }
+      {
+        "name": "herb",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -376,7 +436,11 @@
     "item": "wood",
     "itemAmount": 1,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 10 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 10
+      }
     ]
   },
   {
@@ -391,7 +455,11 @@
     "item": "wood",
     "itemAmount": 20,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 150 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 150
+      }
     ]
   },
   {
@@ -406,7 +474,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 10 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 10
+      }
     ]
   },
   {
@@ -421,7 +493,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "iron ore", "type": "item", "amount": 10 }
+      {
+        "name": "iron ore",
+        "type": "item",
+        "amount": 10
+      }
     ]
   },
   {
@@ -462,7 +538,11 @@
     "item": "wolf pelt",
     "itemAmount": 1,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 30 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 30
+      }
     ]
   },
   {
@@ -477,8 +557,16 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "rabbit", "type": "item", "amount": 1 },
-      { "name": "animal handling", "type": "skill", "amount": 2 }
+      {
+        "name": "rabbit",
+        "type": "item",
+        "amount": 1
+      },
+      {
+        "name": "animal handling",
+        "type": "skill",
+        "amount": 2
+      }
     ]
   },
   {
@@ -493,7 +581,11 @@
     "item": "blessed spring water",
     "itemAmount": 1,
     "requirements": [
-      { "name": "spring water", "type": "item", "amount": 1 }
+      {
+        "name": "spring water",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -508,8 +600,16 @@
     "item": "purification potion",
     "itemAmount": 1,
     "requirements": [
-      { "name": "blessed spring water", "type": "item", "amount": 1 },
-      { "name": "herb", "type": "item", "amount": 5 }
+      {
+        "name": "blessed spring water",
+        "type": "item",
+        "amount": 1
+      },
+      {
+        "name": "herb",
+        "type": "item",
+        "amount": 5
+      }
     ]
   },
   {
@@ -524,7 +624,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 800 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 800
+      }
     ]
   },
   {
@@ -539,8 +643,16 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight corrupted satyrs", "type": "task", "amount": 5 },
-      { "name": "purification potion", "type": "item", "amount": 1 }
+      {
+        "name": "fight corrupted satyrs",
+        "type": "task",
+        "amount": 5
+      },
+      {
+        "name": "purification potion",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -555,7 +667,11 @@
     "item": "dire wolf pelt",
     "itemAmount": 1,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 80 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 80
+      }
     ]
   },
   {
@@ -570,7 +686,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "wolf pelt", "type": "item", "amount": 2 }
+      {
+        "name": "wolf pelt",
+        "type": "item",
+        "amount": 2
+      }
     ]
   },
   {
@@ -585,8 +705,16 @@
     "item": "gold",
     "itemAmount": 50,
     "requirements": [
-      { "name": "power", "type": "power", "amount": 120 },
-      { "name": "fight goblins", "type": "task", "amount": 15 }
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 120
+      },
+      {
+        "name": "fight goblins",
+        "type": "task",
+        "amount": 15
+      }
     ]
   },
   {
@@ -640,7 +768,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "gold", "type": "item", "amount": 5 }
+      {
+        "name": "gold",
+        "type": "item",
+        "amount": 5
+      }
     ]
   },
   {
@@ -655,7 +787,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "gold", "type": "item", "amount": 50 }
+      {
+        "name": "gold",
+        "type": "item",
+        "amount": 50
+      }
     ]
   },
   {
@@ -709,7 +845,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "reading", "type": "skill", "amount": 2 }
+      {
+        "name": "reading",
+        "type": "skill",
+        "amount": 2
+      }
     ]
   },
   {
@@ -724,7 +864,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "reading", "type": "skill", "amount": 2 }
+      {
+        "name": "reading",
+        "type": "skill",
+        "amount": 2
+      }
     ]
   },
   {
@@ -739,7 +883,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "reading", "type": "skill", "amount": 2 }
+      {
+        "name": "reading",
+        "type": "skill",
+        "amount": 2
+      }
     ]
   },
   {
@@ -754,7 +902,11 @@
     "item": "elven longbow",
     "itemAmount": 1,
     "requirements": [
-      { "name": "gold", "type": "item", "amount": 10 }
+      {
+        "name": "gold",
+        "type": "item",
+        "amount": 10
+      }
     ]
   },
   {
@@ -769,7 +921,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "elven longbow", "type": "item", "amount": 1 }
+      {
+        "name": "elven longbow",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -784,7 +940,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight goblin king", "type": "task", "amount": 1 }
+      {
+        "name": "fight goblin king",
+        "type": "task",
+        "amount": 1
+      }
     ]
   },
   {
@@ -799,9 +959,21 @@
     "item": "iron arrow",
     "itemAmount": 1,
     "requirements": [
-      { "name": "wood", "type": "item", "amount": 1 },
-      { "name": "iron ore", "type": "item", "amount": 1 },
-      { "name": "crafting", "type": "skill", "amount": 1 }
+      {
+        "name": "wood",
+        "type": "item",
+        "amount": 1
+      },
+      {
+        "name": "iron ore",
+        "type": "item",
+        "amount": 1
+      },
+      {
+        "name": "crafting",
+        "type": "skill",
+        "amount": 1
+      }
     ]
   },
   {
@@ -816,7 +988,11 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "magic", "type": "skill", "amount": 3 }
+      {
+        "name": "magic",
+        "type": "skill",
+        "amount": 3
+      }
     ]
   },
   {
@@ -844,9 +1020,21 @@
     "item": "moon sword",
     "itemAmount": 1,
     "requirements": [
-      { "name": "blacksmith training", "type": "task", "amount": 1 },
-      { "name": "mithril", "type": "item", "amount": 5 },
-      { "name": "crafting", "type": "skill", "amount": 3 }
+      {
+        "name": "blacksmith training",
+        "type": "task",
+        "amount": 1
+      },
+      {
+        "name": "mithril",
+        "type": "item",
+        "amount": 5
+      },
+      {
+        "name": "crafting",
+        "type": "skill",
+        "amount": 3
+      }
     ]
   },
   {
@@ -861,9 +1049,21 @@
     "item": "mithril armor",
     "itemAmount": 1,
     "requirements": [
-      { "name": "enter tournament", "type": "task", "amount": 1 },
-      { "name": "mithril", "type": "item", "amount": 5 },
-      { "name": "crafting", "type": "skill", "amount": 3 }
+      {
+        "name": "enter tournament",
+        "type": "task",
+        "amount": 1
+      },
+      {
+        "name": "mithril",
+        "type": "item",
+        "amount": 5
+      },
+      {
+        "name": "crafting",
+        "type": "skill",
+        "amount": 3
+      }
     ]
   },
   {
@@ -878,7 +1078,11 @@
     "item": "iron sword",
     "itemAmount": 1,
     "requirements": [
-      { "name": "iron ore", "type": "item", "amount": 1 }
+      {
+        "name": "iron ore",
+        "type": "item",
+        "amount": 1
+      }
     ]
   },
   {
@@ -886,8 +1090,53 @@
     "name": "fight giant leeches",
     "parent": "travel to swamp",
     "choiceWith": null,
-    "skill": null,
-    "skillAmount": null,
+    "skill": "combat",
+    "skillAmount": 10,
+    "power": 30,
+    "count": 10,
+    "item": null,
+    "itemAmount": null,
+    "requirements": [
+      {
+        "name": "power",
+        "type": "power",
+        "amount": 500
+      }
+    ]
+  },
+  {
+    "id": "explore mountains",
+    "name": "explore mountains",
+    "parent": "travel to mountains",
+    "choiceWith": null,
+    "skill": "movement",
+    "skillAmount": 1,
+    "power": null,
+    "count": 5,
+    "item": null,
+    "itemAmount": null,
+    "requirements": []
+  },
+  {
+    "id": "enter mine",
+    "name": "enter mine",
+    "parent": "explore mountains",
+    "choiceWith": null,
+    "skill": "movement",
+    "skillAmount": 10,
+    "power": null,
+    "count": 1,
+    "item": null,
+    "itemAmount": null,
+    "requirements": []
+  },
+  {
+    "id": "walk to tower",
+    "name": "walk to tower",
+    "parent": "explore mountains",
+    "choiceWith": null,
+    "skill": "movement",
+    "skillAmount": 10,
     "power": null,
     "count": 1,
     "item": null,

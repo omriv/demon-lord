@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import {
   ReactFlow,
   Background,
@@ -12,7 +12,9 @@ import '@xyflow/react/dist/style.css';
 
 import TaskNode from './components/TaskNode';
 import TaskEditor from './components/TaskEditor';
+import TaskListPanel from './components/TaskListPanel';
 import { useGraphLayout } from './hooks/useGraphLayout';
+import { extractCollections } from './utils/extractCollections';
 import type { Task } from './types/task';
 import initialTasks from './data/tasks.json';
 
@@ -34,7 +36,16 @@ function emptyNewTask(parentId: string | null): Task {
   };
 }
 
-function GraphView({ tasks, setTasks }: { tasks: Task[]; setTasks: React.Dispatch<React.SetStateAction<Task[]>> }) {
+interface GraphViewProps {
+  tasks: Task[];
+  setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
+  skills: string[];
+  items: string[];
+  onAddSkill: (s: string) => void;
+  onAddItem: (s: string) => void;
+}
+
+function GraphView({ tasks, setTasks, skills, items, onAddSkill, onAddItem }: GraphViewProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [editingNew, setEditingNew] = useState<Task | null>(null);
   const { fitView } = useReactFlow();
@@ -117,7 +128,8 @@ function GraphView({ tasks, setTasks }: { tasks: Task[]; setTasks: React.Dispatc
           <span className="ml-auto text-gray-500 text-xs">{tasks.length} tasks</span>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 relative min-h-0">
+          <TaskListPanel tasks={tasks} selectedId={selectedId} onSelect={id => { setEditingNew(null); setSelectedId(id); }} />
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -131,8 +143,12 @@ function GraphView({ tasks, setTasks }: { tasks: Task[]; setTasks: React.Dispatc
             <Background color="#374151" gap={20} />
             <Controls />
             <MiniMap
-              nodeColor={n => (n.id === selectedId ? '#60a5fa' : '#4b5563')}
-              style={{ background: '#111827' }}
+              nodeColor={n => n.id === selectedId ? '#60a5fa' : '#94a3b8'}
+              nodeStrokeWidth={0}
+              maskColor="rgba(0,0,0,0.25)"
+              style={{ background: '#0f172a', border: '1px solid #374151', width: 240, height: 160 }}
+              pannable
+              zoomable
             />
           </ReactFlow>
         </div>
@@ -143,10 +159,14 @@ function GraphView({ tasks, setTasks }: { tasks: Task[]; setTasks: React.Dispatc
         <TaskEditor
           task={selectedTask.id === '__new__' ? selectedTask : (tasks.find(t => t.id === selectedTask.id) ?? null)}
           allTasks={tasks}
+          skills={skills}
+          items={items}
           onSave={handleSave}
           onDelete={handleDelete}
           onClose={() => { setSelectedId(null); setEditingNew(null); }}
           onAddChild={handleAddChild}
+          onAddSkill={onAddSkill}
+          onAddItem={onAddItem}
         />
       )}
     </div>
@@ -156,9 +176,28 @@ function GraphView({ tasks, setTasks }: { tasks: Task[]; setTasks: React.Dispatc
 export default function App() {
   const [tasks, setTasks] = useState<Task[]>(initialTasks as Task[]);
 
+  const initial = useMemo(() => extractCollections(initialTasks as Task[]), []);
+  const [skills, setSkills] = useState<string[]>(initial.skills);
+  const [items, setItems] = useState<string[]>(initial.items);
+
+  const onAddSkill = useCallback((s: string) => {
+    setSkills(prev => prev.includes(s) ? prev : [...prev, s].sort());
+  }, []);
+
+  const onAddItem = useCallback((s: string) => {
+    setItems(prev => prev.includes(s) ? prev : [...prev, s].sort());
+  }, []);
+
   return (
     <ReactFlowProvider>
-      <GraphView tasks={tasks} setTasks={setTasks} />
+      <GraphView
+        tasks={tasks}
+        setTasks={setTasks}
+        skills={skills}
+        items={items}
+        onAddSkill={onAddSkill}
+        onAddItem={onAddItem}
+      />
     </ReactFlowProvider>
   );
 }

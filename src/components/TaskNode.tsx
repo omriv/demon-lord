@@ -5,6 +5,7 @@ import type { Task } from '../types/task';
 
 export interface TaskNodeData extends Task {
   selected?: boolean;
+  onPath?: boolean;
   onSelect: (id: string) => void;
 }
 
@@ -37,11 +38,19 @@ function TaskNode(props: NodeProps) {
         transition-all duration-150 shadow-lg
         ${colorClass}
         ${data.selected ? 'ring-2 ring-white ring-offset-1 ring-offset-transparent' : ''}
-        ${isChoice ? 'border-dashed' : ''}
+        ${data.onPath && !data.selected ? 'ring-2 ring-blue-400/60 ring-offset-1 ring-offset-transparent brightness-125' : ''}
       `}
       onClick={() => data.onSelect(data.id)}
     >
-      <Handle type="target" position={Position.Top} className="!bg-gray-400 !w-2 !h-2" />
+      {/* Top/bottom handles for parent-child edges */}
+      <Handle type="target" position={Position.Top} id="top" className="!bg-gray-400 !w-2 !h-2" />
+      <Handle type="source" position={Position.Bottom} id="bottom" className="!bg-gray-400 !w-2 !h-2" />
+
+      {/* Side handles for mutex edges */}
+      <Handle type="source" position={Position.Right} id="right" className="!bg-transparent !w-0 !h-0 !border-0" />
+      <Handle type="target" position={Position.Left} id="left" className="!bg-transparent !w-0 !h-0 !border-0" />
+      <Handle type="source" position={Position.Left} id="left-src" className="!bg-transparent !w-0 !h-0 !border-0" />
+      <Handle type="target" position={Position.Right} id="right-tgt" className="!bg-transparent !w-0 !h-0 !border-0" />
 
       {isChoice && (
         <span className="absolute -top-2 right-1 text-[9px] bg-amber-500 text-black rounded px-1 font-bold">
@@ -72,8 +81,6 @@ function TaskNode(props: NodeProps) {
       <div className="mt-1 text-center">
         <span className="text-[9px] text-gray-400">×{data.count}</span>
       </div>
-
-      <Handle type="source" position={Position.Bottom} className="!bg-gray-400 !w-2 !h-2" />
     </div>
   );
 }
