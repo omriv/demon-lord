@@ -1,4 +1,4 @@
-export type RequirementType = 'card' | 'skill' | 'item' | 'power';
+export type RequirementType = 'task' | 'skill' | 'item' | 'power';
 
 export interface Requirement {
   name: string;

@@ -10,7 +10,7 @@ interface Props {
   onAddChild: (parentId: string) => void;
 }
 
-const REQ_TYPES: RequirementType[] = ['card', 'skill', 'item', 'power'];
+const REQ_TYPES: RequirementType[] = ['task', 'skill', 'item', 'power'];
 
 function emptyTask(parent: string | null): Task {
   return {

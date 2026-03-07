@@ -104,7 +104,7 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight forest guardian", "type": "card", "amount": 1 }
+      { "name": "fight forest guardian", "type": "task", "amount": 1 }
     ]
   },
   {
@@ -119,8 +119,8 @@
     "item": "gold",
     "itemAmount": 25,
     "requirements": [
-      { "name": "clean tables", "type": "card", "amount": 5 },
-      { "name": "fight rats", "type": "card", "amount": 10 }
+      { "name": "clean tables", "type": "task", "amount": 5 },
+      { "name": "fight rats", "type": "task", "amount": 10 }
     ]
   },
   {
@@ -289,7 +289,7 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "read \"10 phrases you might need in a goblin ambush\"", "type": "card", "amount": 1 }
+      { "name": "read \"10 phrases you might need in a goblin ambush\"", "type": "task", "amount": 1 }
     ]
   },
   {
@@ -304,8 +304,8 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight goblins", "type": "card", "amount": 1 },
-      { "name": "read \"sound as beautiful as we look\"", "type": "card", "amount": 1 }
+      { "name": "fight goblins", "type": "task", "amount": 1 },
+      { "name": "read \"sound as beautiful as we look\"", "type": "task", "amount": 1 }
     ]
   },
   {
@@ -539,7 +539,7 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight corrupted satyrs", "type": "card", "amount": 5 },
+      { "name": "fight corrupted satyrs", "type": "task", "amount": 5 },
       { "name": "purification potion", "type": "item", "amount": 1 }
     ]
   },
@@ -586,7 +586,7 @@
     "itemAmount": 50,
     "requirements": [
       { "name": "power", "type": "power", "amount": 120 },
-      { "name": "fight goblins", "type": "card", "amount": 15 }
+      { "name": "fight goblins", "type": "task", "amount": 15 }
     ]
   },
   {
@@ -784,7 +784,7 @@
     "item": null,
     "itemAmount": null,
     "requirements": [
-      { "name": "fight goblin king", "type": "card", "amount": 1 }
+      { "name": "fight goblin king", "type": "task", "amount": 1 }
     ]
   },
   {
@@ -844,7 +844,7 @@
     "item": "moon sword",
     "itemAmount": 1,
     "requirements": [
-      { "name": "blacksmith training", "type": "card", "amount": 1 },
+      { "name": "blacksmith training", "type": "task", "amount": 1 },
       { "name": "mithril", "type": "item", "amount": 5 },
       { "name": "crafting", "type": "skill", "amount": 3 }
     ]
@@ -861,7 +861,7 @@
     "item": "mithril armor",
     "itemAmount": 1,
     "requirements": [
-      { "name": "enter tournament", "type": "card", "amount": 1 },
+      { "name": "enter tournament", "type": "task", "amount": 1 },
       { "name": "mithril", "type": "item", "amount": 5 },
       { "name": "crafting", "type": "skill", "amount": 3 }
     ]

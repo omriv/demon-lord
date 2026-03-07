@@ -5,7 +5,8 @@
       "Bash(node:*)",
       "Bash(npm:*)",
       "Bash(NODE_OPTIONS=\"\" \"/c/Program Files/nodejs/npm.cmd\" run:*)",
-      "Bash(NODE_OPTIONS=\"\" \"/c/Program Files/nodejs/npm.cmd\" install:*)"
+      "Bash(NODE_OPTIONS=\"\" \"/c/Program Files/nodejs/npm.cmd\" install:*)",
+      "Bash(sed:*)"
     ]
   }
 }
