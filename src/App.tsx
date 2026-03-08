@@ -145,7 +145,7 @@ function GraphView({ tasks, setTasks, skills, items, onAddSkill, onAddItem }: Gr
             <MiniMap
               nodeColor={n => n.id === selectedId ? '#60a5fa' : '#94a3b8'}
               nodeStrokeWidth={0}
-              maskColor="rgba(0,0,0,0.25)"
+              maskColor="rgba(0,0,0,0.75)"
               style={{ background: '#0f172a', border: '1px solid #374151', width: 240, height: 160, zIndex: 20 }}
               pannable
               zoomable

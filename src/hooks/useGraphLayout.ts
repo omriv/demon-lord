@@ -21,7 +21,7 @@ export function useGraphLayout(tasks: Task[], selectedId: string | null, onSelec
   return useMemo(() => {
     const g = new dagre.graphlib.Graph();
     g.setDefaultEdgeLabel(() => ({}));
-    g.setGraph({ rankdir: 'TB', ranksep: 60, nodesep: 30 });
+    g.setGraph({ rankdir: 'TB', ranksep: 80, nodesep: 25 });
 
     tasks.forEach(task => {
       g.setNode(task.id, { width: NODE_WIDTH, height: NODE_HEIGHT });
@@ -74,9 +74,10 @@ export function useGraphLayout(tasks: Task[], selectedId: string | null, onSelec
         targetHandle: 'top',
         type: 'step',
         style: {
-          stroke: onPath ? '#93c5fd' : '#4b5563',
-          strokeWidth: onPath ? 2.5 : 1.5,
+          stroke: onPath ? '#f4ba26' : '#818c9b',
+          strokeWidth: onPath ? 3 : 2,
         },
+        zIndex: onPath ? 10 : 0,
       });
     });
 

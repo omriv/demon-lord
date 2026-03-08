@@ -1142,5 +1142,18 @@
     "item": null,
     "itemAmount": null,
     "requirements": []
+  },
+  {
+    "id": "knock on dooe",
+    "name": "knock on dooe",
+    "parent": "walk to tower",
+    "choiceWith": null,
+    "skill": "precision",
+    "skillAmount": 5,
+    "power": 1,
+    "count": 2,
+    "item": null,
+    "itemAmount": null,
+    "requirements": []
   }
 ]
