@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import {
   ReactFlow,
   Background,
@@ -146,7 +146,7 @@ function GraphView({ tasks, setTasks, skills, items, onAddSkill, onAddItem }: Gr
               nodeColor={n => n.id === selectedId ? '#60a5fa' : '#94a3b8'}
               nodeStrokeWidth={0}
               maskColor="rgba(0,0,0,0.25)"
-              style={{ background: '#0f172a', border: '1px solid #374151', width: 240, height: 160 }}
+              style={{ background: '#0f172a', border: '1px solid #374151', width: 240, height: 160, zIndex: 20 }}
               pannable
               zoomable
             />
@@ -179,6 +179,16 @@ export default function App() {
   const initial = useMemo(() => extractCollections(initialTasks as Task[]), []);
   const [skills, setSkills] = useState<string[]>(initial.skills);
   const [items, setItems] = useState<string[]>(initial.items);
+
+  const isFirstRender = useRef(true);
+  useEffect(() => {
+    if (isFirstRender.current) { isFirstRender.current = false; return; }
+    fetch('/api/save-tasks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(tasks, null, 2),
+    }).catch(console.error);
+  }, [tasks]);
 
   const onAddSkill = useCallback((s: string) => {
     setSkills(prev => prev.includes(s) ? prev : [...prev, s].sort());

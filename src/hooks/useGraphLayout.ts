@@ -49,6 +49,8 @@ export function useGraphLayout(tasks: Task[], selectedId: string | null, onSelec
         id: task.id,
         type: 'taskNode',
         position: { x: pos.x - NODE_WIDTH / 2, y: pos.y - NODE_HEIGHT / 2 },
+        width: NODE_WIDTH,
+        height: NODE_HEIGHT,
         data: {
           ...task,
           selected: task.id === selectedId,
